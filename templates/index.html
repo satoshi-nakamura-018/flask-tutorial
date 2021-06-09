@@ -16,5 +16,13 @@
     {% else %}
     <p>再読み込みしてみてね</p>
     {% endif %}
+    
+    <p>このページでは、占いの結果として表示されるのは以下の通りです
+        <ul>
+            {% for unsei in fortune_list %}
+            <li>{{unsei}}</li>
+            {% endfor %}
+        </ul>
+    </p>
 </body>
 </html>
